@@ -1,0 +1,689 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+  width: 100%;
+  height: 75px;
+  background: #304254;
+  position: relative;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul{
+  padding-right: 25px;
+}
+ul li{
+  display: inline-block;
+  padding: 10px;
+}
+ul li a{
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+  font-weight: 600;
+  color: white;
+}
+ul li::after{
+  content: '';
+  background-color: #00b2ce;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: .5s ease-in-out;
+
+}
+ul li:hover::after{
+  width: 100%;
+  
+}
+.navlogo{
+  width: 100px;
+  padding: 25px;
+}
+.close{
+  width: 15px;
+}
+.open{
+  width: 20px;
+}
+.open{
+  display: none;
+}
+.close{
+  display: none;
+}
+.carousel {
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.5));
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+  }
+  .slide {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+   
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentholder0{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30%;
+    padding: 50px;
+  }
+  h1.herohead{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+  }
+  p.heroexp{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+  }
+  section{
+    margin-top: 40px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .aboutlogo{
+    width: 400px;
+  }
+  .aboutheading{
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 40px;
+    color: #304254;
+  }
+  .aboutcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .aboutcontent{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+  }
+  h3.whychoose{
+    font-weight: 700;
+    font-size: 25px;
+    padding: 15px;
+    color: #304254;
+    text-align: center;
+  }
+  p.whychoosecontent{
+    color: #242424;
+    text-align: justify;
+    padding: 15px;
+    font-weight: 400;
+
+  }
+  h1.ourproduct{
+    text-align: center;
+    color: #304254;
+  }
+  h1.ourproduct1{
+    text-align: center;
+    color: #304254;
+    padding-top: 28px;
+  }
+  section.ourproducts{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: #cddae7;
+  }
+  
+  .cardconatiner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .card1{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    width: 20%;
+    height: 225px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: #3091ff;
+    filter: drop-shadow(0 0 8px rgba(21, 59, 136, 0.635));
+    margin: 20px;
+    transition: 1s;
+  }
+  .card1:hover{
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .card2{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    width: 20%;
+    height: 225px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: #3091ff;
+    filter: drop-shadow(0 0 8px rgba(21, 59, 136, 0.635));
+    margin: 20px;
+    transition: 1s;
+  }
+  .card2:hover{
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .card3{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    width: 20%;
+    height: 225px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: #3091ff;
+    filter: drop-shadow(0 0 8px rgba(21, 59, 136, 0.635));
+    margin: 20px;
+    transition: 1s;
+  }
+  .card3:hover{
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  img.icons{
+    width: 25px;
+  }
+  .productsheading{
+    padding: 5px;
+    color: #304254;
+    font-size: larger;
+    font-size: 14px;
+    text-align: center;
+  }
+  .productdes{
+    padding: 5px;
+    text-align: justify;
+    font-weight: 350;
+    color: #242424;
+    font-size: 12px;
+  }
+
+  button{
+    background: #00b2ce;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+  }
+  button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+
+  }
+  .call{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .call1{
+    margin: right 15px; ;
+  }
+  .getquote{
+    margin-left: 15px;
+  }
+  section.ourpartners{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .imagecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  img.plogos{
+    width: 150px;
+    padding: 20px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+  }
+  section.testimonails{
+    background: #cddae7;
+  }
+  .testiconatainer{
+    width: 90%;
+  }
+  .contentholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  .personlogo{
+    width: 50px;
+    margin-right: 10px;
+    fill: #00b2ce;
+  }
+  .personlogo1{
+    width: 50px;
+    margin-left: 10px;
+    fill: #00b2ce;
+  }
+  .personlogo2{
+    display: none;
+    width: 50px;
+    fill: #00b2ce;
+  }
+  .testi{
+    display: grid;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  .testi1{
+    display: grid;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  h3.name{
+    color: #304254;
+    margin-left: 30px;
+    padding: 5px;
+  }
+  h3.name1{
+    color: #304254;
+    margin-right: 30px;
+    text-align: right;
+    padding: 5px;
+  }
+  p.tes{
+    color: #242424;
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  p.tes1{
+    color: #242424;
+    margin-right: 20px;
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+  }
+  footer{
+    background: #304254;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .section0{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec1{
+    width: 50%;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    padding: 25px;
+  }
+  .sec2{
+    width: 50%;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    padding: 25px;
+  }
+  .footerh1{
+    color: #00b2ce;
+  }
+  .footera{
+    color: white;
+    text-decoration: none;
+  }
+  .expholder{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+  }
+  .expicons{
+    width: 150px;
+  }
+  .expicons1{
+    width: 150px;
+    display: none;
+  }
+  .expicons2{
+    width: 150px;
+  }
+  .exp{
+    margin-left: 10px;
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    margin: 25px;
+  }
+  h1.expheading{
+    color: #304254;
+
+  }
+  p.expexp{
+    color: #242424;
+    font-size: medium;
+    text-align: justify;
+  }
+  .copy p{
+    color: white;
+    text-align: center;
+  }
+  .copy p a{
+    color: #00b2ce;
+    text-decoration: none;
+  }
+  .footericon{
+    width: 20px;
+    padding: 10px;
+  }
+  .cd{
+    display: flex;
+    align-items: center;
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .scicons{
+    width: 25px;
+    padding: 5px;
+  }
+  .form{
+    padding: 50px;
+  }
+  form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"], input[type="email"], textarea, input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type="submit"] {
+    background-color: #00b2ce;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #304254;
+  }
+  a.pagelink{
+    color: #00b2ce;
+    text-decoration: none;
+  }
+
+
+  @media (max-width: 500px){
+    html, body{
+      overflow-x: hidden;
+  }
+    .carousel {
+      width: 100%;
+      height: 70vh;
+    }
+    .slide img{
+        width: 100%;
+        height: 70vh;
+    }
+    .caption {
+      font-size: 14px;
+    }
+    h1.herohead{
+      text-align: center;
+      font-size: 50px;
+    }
+    p.heroexp{
+      text-align: center;
+      font-size: 15px;
+      padding: 5px;
+    }
+    .aboutheading{
+      padding: 5px;
+      margin-top: 10px;
+      font-size: 40px;
+    }
+    .aboutcontainer{
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+    }
+    .aboutcontent{
+      width: 80%;
+    }
+    img.aboutlogo{
+      padding: 0;
+      width: 200px;
+    }
+    p.whychoosecontent{
+      padding: 5px;
+    }
+    h1.ourproduct{
+      margin-top: 20px;
+      
+    }
+    .cardconatiner{
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+    .card1{
+      width: 90%;
+      height: 450px;
+    }
+    .card2{
+      width: 90%;
+      height: 450px;
+    }
+    .card3{
+      width: 90%;
+      height: 450px;
+    }
+    .productdes{
+      font-size: 20px;
+    }
+    .productsheading{
+      font-size: 22px;
+    }
+    img.icons{
+      width: 70px;
+    }
+    .navLinks{
+      position: absolute;
+      background: #304254;
+      height: 50vh;
+      width: 200px;
+      top: 0;
+      right: -220px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+  }
+  .close{
+      display: block;
+      margin: 15px;
+      cursor: pointer;
+  }
+  .open{
+      display: block;
+      margin: 15px;
+      cursor: pointer;
+  }
+  .navlogo{
+      width: 100px;
+  }
+  .navLinks ul{
+      padding: 20px;
+    
+  }
+  h1.abouthead{
+    margin-top: 10px;
+  }
+  .imagecontainer{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  .contentholder{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .personlogo{
+    width: 75px;
+    padding: 15px;
+  }
+  .personlogo1{
+    display: none;
+    width: 75px;
+    padding: 15px;
+  }
+  .personlogo2{
+    display: block;
+    width: 75px;
+    padding: 15px;
+  }
+  .testi{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .testi1{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  h3.name{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  h3.name1{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  p.tes{
+    padding: 20px;
+    text-align: justify;
+    margin: 0;
+  }
+  p.tes1{
+    padding: 20px;
+    text-align: justify;
+    margin: 0;
+  }
+  .section0{
+    display: grid;
+  }
+  footer{
+    height: auto;
+  }
+  .expholder{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .expicons1{
+    display: block;
+  }
+  .expicons2{
+    display: none;
+  }
+  .expheading{
+    text-align: center;
+    padding: 10px;
+  }
+  .expexp{
+    text-align: justify;
+    font-size: 20px;
+  }
+  .copy p{
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+  
+      
